@@ -1,19 +1,21 @@
 // script to carry out mathematical operations with two digits given by two prompts
 
-let numberOne = prompt("Type first number")
-let numberTwo = prompt("Type second number")
-let error = false
+let numberOne = prompt("Type first number");
+let numberTwo = prompt("Type second number");
+let error = false;
+
 if (numberOne === '') {
     error = true
 } else if (numberOne) {
     numberOne = Number(numberOne)
-}
+};
 
 if (numberTwo === '') {
     error = true
 } else if (numberTwo) {
     numberTwo = Number(numberTwo)
-}
+};
+
 if (error === true){
     alert('No valid input')
 } else {
